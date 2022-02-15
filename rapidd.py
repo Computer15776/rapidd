@@ -10,7 +10,7 @@ connectivity from external devices.
 try:
     client = boto3.client('route53')
 except:
-    print('AWS Route53 client failed to load. Please ensure boto3 and ')
+    print('AWS Route53 client failed to load. Please check boto3 dependencies and credentials.')
 try:
     subdomain = sys.argv[1]
     dns_name = sys.argv[2]
